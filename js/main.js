@@ -1,3 +1,4 @@
+
 $(".skills #slider").slick({
     autoplay:false,
     arrows: true,
