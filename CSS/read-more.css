@@ -1,0 +1,127 @@
+
+header .inner{
+   border-bottom: 1px solid white;
+}
+.textArea p{
+    color: white;
+    font-size: 14px;
+}  
+.titleArea h2{
+    color: white;
+    font-size: 20px;
+}
+
+/* main1 */
+
+.main1 .inner .imgArea{
+   margin: 5% 0;
+}
+.main1 .inner .imgArea img{
+    width: 1000px;
+    height: 560px;
+    margin-left: 15%;
+}
+.main1 .inner .textArea h2{
+    color: white;
+}
+.main1 .inner .textArea{
+    text-align: center;
+}
+.main1 .inner .textArea h2{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+
+/* occasion, thought,determination*/ /* 슬라이드 하면 서로 조금씩 다른 타이밍에 글씨들 나옴 */
+/* 전체 텍스트 position으로 위치 잡아보기 */
+.main .inner{
+  
+    justify-content: space-between;
+    margin-top: 20%;
+}
+.main .inner .titleArea{
+   text-align: center;
+   padding: 40px;
+   margin-bottom: 80px;
+}
+.main .inner .mainContents{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+.main .inner .mainContents .textArea{
+    margin-bottom: 80px;
+}
+.main .inner .mainContents .textArea:nth-child(1),
+.main .inner .mainContents .textArea:nth-child(3){
+    margin-left: 70px;
+}
+.main .inner .mainContents .textArea:nth-child(2){
+    margin-right: 70px;
+}
+.main .inner .imgArea img{
+    width: 510px;
+    height: 410px;
+    object-fit: cover;
+}
+.main .inner p{
+    line-height: 2;
+    white-space: pre-line;
+}
+
+/* contact */
+.main5 .inner{
+    margin-bottom: 10%;
+}
+.main5 .inner .main5Contents {
+    display: flex;
+    margin-top: 20%;
+}
+.main5 .inner .main5Contents .rightArea img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+.main5 .inner .main5Contents .leftArea{
+    margin: 0 auto;
+}
+.main5 .inner .main5Contents .leftArea .textArea p{
+    font-size: 16px;
+    margin-top: 130px;
+    margin-bottom: 30px;
+}
+
+.main5 .inner .leftArea  .infoArea{
+    display: flex;
+    margin-left: 35%;
+}
+.main5 .inner .leftArea .infoArea a{
+    text-transform: uppercase;
+    font-size: 17px;
+   margin-left: 30px;
+   text-decoration: none;
+   color: white;
+}
+.main5 .inner .leftArea .infoArea a:hover{
+    border-bottom: 2px solid #1E36F5;
+}
+
+/* footer */
+footer{
+    background: none;
+    padding: 0;
+   
+}
+footer .inner{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 40px;
+}
+footer .textArea strong,
+footer .textArea p{
+   color: white;
+}
