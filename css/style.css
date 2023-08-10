@@ -1,0 +1,448 @@
+
+
+.mainConentsArea .icoArea{
+    color: white;
+}
+.icoArea a img{
+    width: 10px;
+    height: 10px;
+}
+li{
+    list-style: none;
+    color: white;
+}
+h2{
+    color: white;
+    font-size: 24px;
+    font-family: 'Inter', sans-serif;
+}
+p{
+    color: white;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+}
+strong{
+    color: white;
+    font-size: 17px;
+    font-family: 'Inter', sans-serif;
+}
+
+/* HOME */
+.home{
+    position: relative;
+}
+.home .homeVideoArea video{
+    width: 100%;
+    height: 800px;
+    margin-top: 30px;
+}
+.home .homeTitleArea{
+    position: absolute;
+    font-size: 16px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    z-index: 9999;
+    text-align: center;
+}
+.home .homeTitleArea h2{
+    margin-bottom: 20px;
+}
+/* .home .homeTitleArea p{
+    font-size: 30px;
+} */
+
+/* about me */
+
+.aboutMe .inner{
+   margin-top: 20%;
+   position: relative;
+}
+.aboutMe .aboutMeTop{
+    display: flex;
+    justify-content: space-between;
+}
+.aboutMe .aboutMeTop h2{
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.aboutMe .aboutMeTop a{
+    text-decoration: none;
+}
+.aboutMe .aboutMeTop p{
+    cursor: pointer;
+}
+.aboutMe .aboutMeTop p:hover{
+    color: gold;
+}
+.aboutMe .aboutMeCenter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.aboutMe .aboutMeCenter .imgArea img{
+    width: 476px;
+    height: 500px;
+    margin-top: 40px;
+    margin-left: 40px;
+    border-radius: 20px;
+}
+
+.aboutMe .aboutMeCenter .textArea ul {
+    /* text-align: center; */
+    position: absolute;
+    right: 14%;
+    bottom: 30%;
+}
+
+.aboutMe .aboutMeCenter .textArea ul li{
+    margin-bottom: 20px;
+}
+
+.aboutMe .aboutMeCenter .textArea ul li span{
+    color: white;
+    opacity: 0.5;
+    margin-right: 40p
+}
+.aboutMe .aboutMeCenter .textArea ul li:nth-child(1) span{
+    margin-right: 48px;
+}
+.aboutMe .aboutMeCenter .textArea ul li:nth-child(2) span{
+    margin-right: 16px;
+}
+.aboutMe .aboutMeCenter .textArea ul li:nth-child(3) span{
+    margin-right: 32px;
+
+}
+.aboutMe .aboutMeCenter .textArea ul li:nth-child(4) span{
+    margin-right: 48px;
+}
+
+.aboutMe .aboutMeCenter .textArea ul li:nth-child(5) span{
+    margin-right: 45px;
+}
+
+
+
+.aboutMe .aboutMebottom ul{
+    display: flex;
+    position: absolute;
+    right: 100px;
+    bottom: 10%;
+
+}
+.aboutMe .aboutMebottom li{
+    font-size: 14px;
+    margin-left: 20px;
+    cursor: pointer;
+    position: relative;
+}
+.aboutMe .aboutMebottom li:hover{
+    border-bottom: 2px solid #1E36F5;
+}
+
+/* design */
+.design {
+    overflow: hidden;
+}
+.design .inner{
+    margin-top: 20%;
+}
+.design .inner .text{
+  margin: 10% 50% ;
+}
+
+.design .topArea ,
+.design .bottomArea {
+    /*display: flex;*/
+    white-space: nowrap;
+}
+.design .topArea{
+    margin-bottom: 70px;
+}
+.design .topArea:hover .rolling1 {
+    animation-play-state: paused;
+}
+.design .topArea .rolling1 {
+    display: inline-block;
+    animation: imgMoveLeft 10s linear infinite;
+}
+
+.design .topArea .rolling1 li {
+    display: inline-block;
+   
+}
+
+@keyframes imgMoveLeft {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.design .bottomArea:hover .rolling2 {
+    animation-play-state: paused;
+}
+.design .bottomArea .rolling2 {
+    display: inline-block;
+    animation: imgMoveRight 10s linear infinite;
+}
+
+.design .bottomArea .rolling2 li {
+    display: inline-block;
+}
+
+@keyframes imgMoveRight {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.design .topArea li img,
+.design .bottomArea li img{
+    width: 200px;
+    height: 200px;
+   margin-left: 54px;
+   cursor: pointer;
+   transition: 0.2s;
+}
+.design .topArea ul li img:hover,
+.design .bottomArea ul li img:hover{
+    transform: scale(1.2);
+}
+
+
+/* skills */
+.skills {
+    margin-top: 300px;
+    padding: 110px 0 122px;
+}
+.skills .titleArea {
+    margin-bottom: 82px;
+}
+.skills .slideArea {
+    position: relative;
+    margin-bottom: 84px;
+}
+.skills .slideArea .prevArrow,
+.skills .slideArea .nextArrow {
+    position: absolute;
+    top: 50%;
+    width: 15px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    cursor: pointer;
+    color: white;
+    font-size: 30px;
+}
+.skills .slideArea .prevArrow {
+    left: 10%;
+}
+.skills .slideArea .nextArrow {
+    right: 10%;
+}
+
+.skills .slider .slick-slide .slideTitle {
+    text-align: center;
+    margin-bottom: 97px;
+}
+.skills .slider .slick-slide .slideTitle .rank {
+    margin-bottom: 16px;
+}
+.skills .slider .slick-slide .slideTitle .rank strong {
+    display: inline-block;
+    border: 1px solid #2b8ab0;
+    border-radius: 25px;
+    color: #2b8ab0;
+    padding: 6px 18px;
+    color: white;
+    margin-bottom: 14px;
+}
+.skills .slider .slick-slide .slideTitle .icoArea{
+    display: flex;
+    margin-left: 40%;
+   
+}
+.skills .slider .slick-slide .slideTitle .icoArea img{
+    width: 80px;
+    height: 80px;
+    margin-left: 20px;
+}
+
+.skills .slider .slick-slide .slideImg {
+    text-align: center;
+    font-size: 0;
+}
+.skills .slider .slick-slide .slideImg img {
+    display: inline-block;
+    width: 410px;
+    height: 285px;
+}
+
+
+/* portofolio */
+.portofolio .inner{
+   margin-top: 20%;
+}
+.portofolio .inner .titleArea h2{
+    text-transform: uppercase;
+    margin-left: 50%;
+  
+}
+.portofolio .inner  div.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.portofolio .inner  div.main .imgArea img{
+    border-radius: 40px;
+    width: 500px;
+    height: 390px;
+    margin-top: 50px;
+}
+.portofolio .inner  .main2 .imgArea img,
+.portofolio .inner  .main4 .imgArea img{
+    margin-right: 100px;
+}
+
+.portofolio .inner div.main .textArea h2{
+    font-size: 24px;
+    position: relative;
+    /* border: 2px solid blue; */
+    margin-left: 200px;
+}
+.portofolio .inner .main1 .textArea h2{
+    margin-left: -5px;
+}
+.portofolio .inner .main1 .textArea h2::after{
+    content: "";
+    display: block;
+    width: 29%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    background-color: #FECA5C;
+}
+.portofolio .inner .main2 .textArea h2::after{
+    content: "";
+    display: block;
+    width: 36%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    background-color: #2B1C8C;
+}
+.portofolio .inner .main3 .textArea h2::after{
+    content: "";
+    display: block;
+    width: 59%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    background-color: #049613;
+}
+.portofolio .inner .main4 .textArea h2::after{
+    content: "";
+    display: block;
+    width: 32%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    background-color: #2b8ab0;
+}
+.portofolio .inner .main5 .textArea h2::after{
+    content: "";
+    display: block;
+    width: 56%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    background-color: beige;
+}
+.portofolio .inner div.main .textArea p{
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: left;
+    white-space: pre-line;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.portofolio .inner div.main .textArea .period{
+    color: #FFF9EB;
+    font-size: 14px;
+    white-space: nowrap;
+}
+.portofolio .inner div.main .tool{
+    color: #F2EBDC;
+}
+
+.portofolio .inner button{
+    border: 1px solid white;
+    background: none;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: none;
+}
+.portofolio .inner button a{
+    text-decoration: none;
+    color: white;
+}
+/* contact */
+.contact .inner{
+    margin-top: 15%;
+    margin-bottom: 10%;
+ }
+ .contact .inner h2{
+    text-transform: uppercase;
+    margin-bottom: 10%;
+    margin-left: 50%;
+ }
+ .contact .inner .contactImg{
+    margin-left: 20%;
+ }
+ .contact .inner .contactImg img{
+    margin-right: 10%;
+ }
+ .contact .inner .contents{
+    display: flex;
+ }
+ .contact .inner div a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+ }
+ .contact .inner .bottom .textArea{
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 100px;
+ }
+
+ .contact .inner .infoArea{
+    display: flex;
+    margin-top: 60px;
+    margin-left: 320px;
+ }
+ .contact .inner .infoArea div a:hover{
+    border-bottom: 2px solid white;
+    background: #1E36F5;
+ }
+ .contact .inner .infoArea .first{
+    margin-right: 20px;
+ }
+

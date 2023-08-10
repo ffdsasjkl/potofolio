@@ -1,0 +1,46 @@
+body{
+    background: black;
+    font-family: 'Inter', sans-serif;
+}
+.inner{
+    width: 1440px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+header .inner{
+    margin: 0 auto;
+}
+header .headerMenu{
+    color: white;
+}
+header .headerMenu ul{
+    display: flex;
+    justify-content: center;
+}
+header .headerMenu ul li{
+    margin: 30px;
+}
+header .headerMenu ul li a{
+    text-decoration: none;
+    color: white;
+    margin: 30px;
+}
+header .headerMenu ul li a:hover{
+    color: #EAC800;
+}
+
+
+/* FOOTER */
+footer{
+    background: white;
+    text-align: center;
+    padding: 20px;
+ }
+
+ footer .textArea strong,
+ footer .textArea p{
+    font-size: 14px;
+    color: black;
+ }
